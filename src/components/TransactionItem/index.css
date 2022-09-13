@@ -10,6 +10,10 @@
 }
 
 .transaction-title {
+  flex-grow: 2;
+}
+
+.transaction-detail {
   flex-grow: 1;
 }
 
