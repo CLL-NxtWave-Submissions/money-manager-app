@@ -158,6 +158,7 @@ export default class MoneyManager extends Component {
                   placeholder="TITLE"
                   value={transactionTitle}
                   onChange={this.onTitleChange}
+                  autoComplete="off"
                 />
 
                 <label className="form-label" htmlFor="amount">
@@ -170,6 +171,7 @@ export default class MoneyManager extends Component {
                   placeholder="AMOUNT"
                   value={transactionAmount}
                   onChange={this.onAmountChange}
+                  autoComplete="off"
                 />
 
                 <label className="form-label" htmlFor="type">

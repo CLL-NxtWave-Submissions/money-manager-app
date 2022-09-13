@@ -11,7 +11,7 @@
   width: 100%;
   padding: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
@@ -36,12 +36,13 @@
 .money-details-img {
   height: 4rem;
   width: 4rem;
+  margin-right: 0;
 }
 
 .money-details-data-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -52,6 +53,7 @@
 
 .money-detail-text {
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .amount-text {
@@ -71,5 +73,18 @@
 
   .expenses-amount-container {
     margin-right: none;
+  }
+
+  .money-details-img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .money-detail-text {
+    font-size: 1rem;
+  }
+
+  .amount-text {
+    font-size: 1.5rem;
   }
 }
