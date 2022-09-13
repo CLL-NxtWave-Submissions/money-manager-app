@@ -143,7 +143,7 @@ export default class MoneyManager extends Component {
 
           <div className="money-manager-transaction-container">
             <div className="add-transaction-container">
-              <p className="transaction-container-header">Add Transaction</p>
+              <h1 className="transaction-container-header">Add Transaction</h1>
               <form
                 className="form-input-container"
                 onSubmit={this.onAddNewTransaction}
@@ -195,13 +195,13 @@ export default class MoneyManager extends Component {
             </div>
 
             <div className="transaction-history-container">
-              <p className="transaction-container-header">History</p>
+              <h1 className="transaction-container-header">History</h1>
+              <div className="transaction-details-header">
+                <p className="transaction-title-header">Title</p>
+                <p className="transaction-detail-header">Amount</p>
+                <p className="transaction-detail-header">Type</p>
+              </div>
               <ul className="transaction-details-container">
-                <li className="transaction-details-header">
-                  <p className="transaction-title-header">Title</p>
-                  <p className="transaction-detail-header">Amount</p>
-                  <p className="transaction-detail-header">Type</p>
-                </li>
                 {transactionsList.map(transactionsListItem => (
                   <TransactionItem
                     key={transactionsListItem.id}
