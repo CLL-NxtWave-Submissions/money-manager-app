@@ -1,1 +1,32 @@
-/* Write your CSS here */
+.transaction-item-container {
+  border: 0.1rem solid #cbd5e1;
+  padding: 1rem 2rem;
+  margin-top: -1px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.transaction-title {
+  flex-grow: 1;
+}
+
+.transaction-title,
+.transaction-detail {
+  color: #334155;
+  font-size: 1rem;
+}
+
+.transaction-delete-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+}
+
+.delete-icon-img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
