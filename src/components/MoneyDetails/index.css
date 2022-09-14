@@ -5,13 +5,14 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .money-details-item-container {
   width: 100%;
   padding: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
@@ -30,19 +31,19 @@
 .expenses-amount-container {
   border: 0.1rem solid #7c3aed;
   background-color: #ede9fe;
-  margin-bottom: none;
+  margin-bottom: 0;
 }
 
 .money-details-img {
-  height: 4rem;
-  width: 4rem;
-  margin-right: 0;
+  height: 7rem;
+  width: 7rem;
+  margin-right: 3rem;
 }
 
 .money-details-data-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -58,6 +59,7 @@
 
 .amount-text {
   font-size: 2rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -72,16 +74,11 @@
   }
 
   .expenses-amount-container {
-    margin-right: none;
-  }
-
-  .money-details-img {
-    height: 7rem;
-    width: 7rem;
+    margin-right: 0;
   }
 
   .money-detail-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .amount-text {
