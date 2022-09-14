@@ -11,17 +11,20 @@
 }
 
 .transaction-title {
-  flex-grow: 2;
+  /* margin-right: 5vw; */
+  width: 8vw;
 }
 
 .transaction-detail {
-  flex-grow: 1;
+  width: 3vw;
+  /* margin-left: 3vw; */
 }
 
 .transaction-title,
 .transaction-detail {
   color: #334155;
   font-size: 1rem;
+  text-align: left;
 }
 
 .transaction-delete-button {
@@ -29,6 +32,7 @@
   outline: none;
   cursor: pointer;
   background: inherit;
+  margin-right: 1rem;
 }
 
 .delete-icon-img {

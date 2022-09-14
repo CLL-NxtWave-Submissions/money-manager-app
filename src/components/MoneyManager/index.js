@@ -202,6 +202,7 @@ export default class MoneyManager extends Component {
                 <p className="transaction-title-header">Title</p>
                 <p className="transaction-detail-header">Amount</p>
                 <p className="transaction-detail-header">Type</p>
+                <p className="transaction-detail-header">{'    '}</p>
               </div>
               <ul className="transaction-details-container">
                 {transactionsList.map(transactionsListItem => (
