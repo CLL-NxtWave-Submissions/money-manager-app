@@ -70,7 +70,7 @@ export default class MoneyManager extends Component {
         type: transactionTypeData.displayText,
       }
 
-      const updatedTransactionsList = [...transactionsList, newTransactionData]
+      const updatedTransactionsList = [newTransactionData, ...transactionsList]
 
       const updatedState = {
         transactionTitle: '',
