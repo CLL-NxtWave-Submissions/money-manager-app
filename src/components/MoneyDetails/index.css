@@ -5,17 +5,18 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .money-details-item-container {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
+  flex-grow: 1;
 }
 
 .balance-amount-container {
@@ -35,9 +36,9 @@
 }
 
 .money-details-img {
-  height: 7rem;
-  width: 7rem;
-  margin-right: 3rem;
+  height: 6rem;
+  width: 6rem;
+  margin-right: 2rem;
 }
 
 .money-details-data-container {
@@ -58,19 +59,28 @@
 }
 
 .amount-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .money-details-container {
     flex-direction: row;
+    margin-bottom: 1rem;
   }
 
   .money-details-item-container {
     width: 30%;
+    justify-content: center;
+    padding: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .money-details-img {
+    height: 7rem;
+    width: 7rem;
+    margin-right: 3rem;
   }
 
   .expenses-amount-container {

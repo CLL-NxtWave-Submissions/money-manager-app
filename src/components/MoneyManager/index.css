@@ -28,7 +28,7 @@
 
 .money-manager-header-user-greeting {
   color: #1e293b;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 0;
 }
 
@@ -40,7 +40,7 @@
 
 .money-manager-header-welcome-message,
 .money-manager-header-app-name-text {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .money-manager-header-app-name-text {
@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100%;
+  min-height: 50vh;
 }
 
 .add-transaction-container {
@@ -81,7 +81,7 @@
 
 .transaction-container-header {
   color: #334155;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 550;
   width: 100%;
   text-align: left;
@@ -97,7 +97,6 @@
 
 .form-label {
   color: #7e858e;
-  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -108,7 +107,6 @@
   width: 100%;
   outline: none;
   border: 0.1rem solid #cbd5e1;
-  font-size: 1rem;
 }
 
 .form-submit-button {
@@ -118,8 +116,13 @@
   border: none;
   cursor: pointer;
   outline: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.form-label,
+.form-input,
+.form-submit-button {
+  font-size: 0.8rem;
 }
 
 .transaction-details-container {
@@ -129,6 +132,7 @@
   align-items: flex-start;
   width: 100%;
   margin-top: 0;
+  overflow-y: auto;
 }
 
 .transaction-details-header {
@@ -144,20 +148,20 @@
 }
 
 .transaction-title-header {
-  width: 8vw;
+  width: 12vw;
 }
 
 .transaction-detail-header {
-  width: 3vw;
+  width: 10vw;
 }
 
 .transaction-title-header,
 .transaction-detail-header {
   color: #334155;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 550;
   text-align: left;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -190,6 +194,26 @@
     flex-direction: row;
   }
 
+  .transaction-container-header {
+    font-size: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-input {
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .form-submit-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
   .add-transaction-container {
     width: 40%;
     padding: 4rem;
@@ -200,6 +224,7 @@
     width: 50%;
     padding: 4rem 2rem;
     flex-grow: 1;
+    height: 67.5vh;
   }
 
   .transaction-title-header {
@@ -208,5 +233,10 @@
 
   .transaction-detail-header {
     width: 3vw;
+  }
+
+  .transaction-title-header,
+  .transaction-detail-header {
+    margin-right: 1rem;
   }
 }
